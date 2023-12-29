@@ -6,13 +6,16 @@ a web interface the script is intended to derive the downloadable
 videos directly from a youtube account.
 
 the downloading of videos is split into 3 phases namely:
+
 fetching:
     - all Subscriptions are downloaded and persisted.
     - all videos are downloaded and persisted (with aiomultiprocess)
+    
 selecting:
     - videos are selected from the postgres Video table by means of a new
       command to be implemented in dlp that takes a list of video_id and selects
       video from the videos table to be transferred to the Download table
+      
 downloading:
     - videos from the Download table with the status 
       pending and are scheduled to be asynchronously
