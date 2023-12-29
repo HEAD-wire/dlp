@@ -26,8 +26,8 @@ downloading:
       downloaded with yt-dlp via a multiprocessing queue.
       
     - yt-dlp requests a download from the postgres database 
-    
       and proceeds to download a video.
+      
     - callbacks are used to update the state in postgres.
 
 
